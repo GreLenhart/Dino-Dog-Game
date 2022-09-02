@@ -1,0 +1,71 @@
+body{
+    padding: 0;
+    margin: 0;
+    
+}
+#Game {
+    margin:30px;
+    overflow: hidden;
+    width: 800px;
+    height: 400px;
+    border: 2px solid black;
+  
+}
+
+  .city {
+    background: url("city.jpg") repeat-x;
+    height: 560px;
+    top:-250px;
+    position: relative;
+    width: 5076px;
+    animation: slide 20s linear infinite;
+  }
+  
+  @keyframes slide{
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-1692px, 0, 0);
+    }
+}
+
+#Player {
+    width: 180px;
+    height: 180px;
+    background-image: url('dog3.gif') ;
+    background-size: 180px 180px;
+    position: relative;
+    top: 190px;   
+    z-index: 1;
+    left:40px;
+}
+.animar{
+    animation: Player 500ms infinite;
+}
+
+@keyframes Player {
+    0%{top: 180px;}
+    30%{top: 80px;}
+    70%{top: 80px;}
+    100%{top: 175px;}
+}
+
+#Hidrante {
+    background-image: url('hidrante.png');
+    z-index: 1;
+    width: 65px;
+    height: 65px;
+    background-size: 65px 65px;
+    position: relative;
+    top: 315px;
+    left: 700px;
+    animation: Barreira 2s infinite linear;
+}
+
+
+@keyframes Barreira {
+    0%{left:700px;}
+    100%{left:20px;}
+}
+
